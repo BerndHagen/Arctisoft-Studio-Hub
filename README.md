@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/hub-logo.png" alt="Arctisoft Studio Hub Logo" width="128" />
 </p>
-<h1 align="center">Arctisoft Studio Hub — Account, License & App Management</h1>
+<h1 align="center">Arctisoft Studio Hub - Account, License & App Management</h1>
 <p align="center">
   <b>Manage your Arctisoft Studio account, licenses and applications from a single desktop interface.</b><br>
   <b>Install, launch, update and organize all your tools in one unified hub.</b>
@@ -31,9 +31,9 @@
 
 Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%\Arctisoft-Studio\`:
 
-- **Medio** — Universal Downloader. Download video and audio from 1,000+ platforms with hardware-accelerated encoding up to 8K resolution. (€7.99 · Freemium)
-- **WaveShaper** — Audio Processing Studio. Professional audio processing with 10-band parametric EQ, multi-effects chain, dynamic compression and a complete mastering suite. (€14.99 · Freemium)
-- **MetaEdit+** — Smart Tag Editor. Batch audio metadata editor supporting 13 formats and 18 tag fields with auto-tag engine and cover art lookup. (100% Free)
+- **Medio** - Universal Downloader. Download video and audio from 1,000+ platforms with hardware-accelerated encoding up to 8K resolution. (€7.99 · Freemium)
+- **WaveShaper** - Audio Processing Studio. Professional audio processing with 10-band parametric EQ, multi-effects chain, dynamic compression and a complete mastering suite. (€14.99 · Freemium)
+- **MetaEdit+** - Smart Tag Editor. Batch audio metadata editor supporting 13 formats and 18 tag fields with auto-tag engine and cover art lookup. (100% Free)
 
 ## **Table of Contents**
 
@@ -88,7 +88,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Processor:** Dual-core 1.6 GHz or equivalent
 - **RAM:** 4 GB
 - **Storage:** 200 MB of free disk space plus additional space for managed applications
-- **Display:** 1280 × 720 resolution
+- **Display:** 1280 �- 720 resolution
 - **Internet:** Required for authentication, license management and application updates
 
 ### **Recommended Requirements**
@@ -96,7 +96,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Processor:** Quad-core 2.0 GHz or higher
 - **RAM:** 8 GB or higher
 - **Storage:** 500 MB of free disk space on SSD plus additional space for managed applications
-- **Display:** 1920 × 1080 resolution
+- **Display:** 1920 �- 1080 resolution
 - **Internet:** Broadband connection for fast application downloads and updates
 
 ## **Third-Party Libraries**
@@ -185,7 +185,7 @@ To activate a premium license:
 
 1. Navigate to the **Licenses** page
 2. Enter your license key in the redemption field
-3. Click **Redeem** — the system validates the key format, checks availability and links it to your account
+3. Click **Redeem** - the system validates the key format, checks availability and links it to your account
 4. On success, the license appears in your list and premium features are unlocked immediately
 
 The redemption process includes format validation, duplicate detection and clear error messaging if the key is invalid or already claimed.
@@ -193,10 +193,10 @@ The redemption process includes format validation, duplicate detection and clear
 ### **Viewing Your Licenses**
 
 All redeemed licenses are displayed in a list showing:
-- **Product** — which application the license applies to (with color-coded indicator)
-- **License Key** — the full key string
-- **Activation Date** — when the license was redeemed
-- **Status** — current license state
+- **Product** - which application the license applies to (with color-coded indicator)
+- **License Key** - the full key string
+- **Activation Date** - when the license was redeemed
+- **Status** - current license state
 
 Each Arctisoft Studio product has its own independent license key. A Medio Premium key unlocks Medio features; a WaveShaper Premium key unlocks WaveShaper features. MetaEdit+ is completely free with no license required. All licenses are one-time lifetime purchases managed through the Hub.
 
@@ -207,10 +207,10 @@ The Purchases page provides a complete record of all transactions linked to your
 ### **Purchase History**
 
 Each purchase entry displays:
-- **Product** — which application the purchase applies to (with product icon and color coding)
-- **Amount** — the purchase price and currency
-- **License Key** — the associated key (masked by default, expandable to view full key)
-- **Date** — when the purchase was completed
+- **Product** - which application the purchase applies to (with product icon and color coding)
+- **Amount** - the purchase price and currency
+- **License Key** - the associated key (masked by default, expandable to view full key)
+- **Date** - when the purchase was completed
 
 A summary at the top shows the total number of purchases and total amount spent across all products.
 
@@ -231,47 +231,47 @@ The Settings page is organized into five tabs providing full control over your a
 ### **Profile**
 
 View and manage your account information:
-- **Avatar** — Upload, change or remove your profile picture
-- **Email** — Update your account email address with verification
-- **Account Info** — View your license count, purchase count and membership details
+- **Avatar** - Upload, change or remove your profile picture
+- **Email** - Update your account email address with verification
+- **Account Info** - View your license count, purchase count and membership details
 
 ### **Preferences**
 
 Configure Hub behavior:
-- **Auto Update** — Automatically check for and install Hub updates
-- **Launch on Startup** — Start the Hub when Windows boots
-- **Minimize to Tray** — Keep the Hub running in the system tray when closed
-- **Check for Updates** — Periodically check for application updates in the background
-- **Show Notifications** — Display desktop notifications for updates and events
+- **Auto Update** - Automatically check for and install Hub updates
+- **Launch on Startup** - Start the Hub when Windows boots
+- **Minimize to Tray** - Keep the Hub running in the system tray when closed
+- **Check for Updates** - Periodically check for application updates in the background
+- **Show Notifications** - Display desktop notifications for updates and events
 
 ### **Security**
 
 Manage authentication and access:
-- **Change Password** — Update your account password with confirmation
-- **Two-Factor Authentication** — Enable or disable TOTP-based 2FA with QR code enrollment
-- **Sign Out All Sessions** — Revoke all active sessions across devices
+- **Change Password** - Update your account password with confirmation
+- **Two-Factor Authentication** - Enable or disable TOTP-based 2FA with QR code enrollment
+- **Sign Out All Sessions** - Revoke all active sessions across devices
 
 ### **Data and Activity**
 
 View account activity and manage your data:
-- **Activity Log** — Timeline of account events including logins, license activations and profile changes
-- **Delete Account** — Permanently remove your account and all associated data with confirmation safeguard
+- **Activity Log** - Timeline of account events including logins, license activations and profile changes
+- **Delete Account** - Permanently remove your account and all associated data with confirmation safeguard
 
 ### **About**
 
 View product information and access legal documentation:
-- **Hub Version** — Current installed version and platform details
-- **Applications** — Overview of all Arctisoft Studio products with their licensing model and pricing
-- **Legal** — Quick links to the Privacy Policy, Terms of Service and License Agreement
+- **Hub Version** - Current installed version and platform details
+- **Applications** - Overview of all Arctisoft Studio products with their licensing model and pricing
+- **Legal** - Quick links to the Privacy Policy, Terms of Service and License Agreement
 
 ## **Authentication**
 
 ### **Sign-In Methods**
 
 The Hub supports three authentication methods:
-- **Email and Password** — Traditional sign-in with email verification for new accounts
-- **Google SSO** — One-click sign-in with your Google account
-- **GitHub SSO** — One-click sign-in with your GitHub account
+- **Email and Password** - Traditional sign-in with email verification for new accounts
+- **Google SSO** - One-click sign-in with your Google account
+- **GitHub SSO** - One-click sign-in with your GitHub account
 
 SSO providers open in a separate popup window so the main Hub interface is never navigated away. New users can create an account directly from the sign-in page. A password reset flow is available for forgotten credentials.
 
@@ -306,9 +306,9 @@ The Help page provides answers to frequently asked questions organized into four
 ## **Legal**
 
 The Legal page contains three tabs:
-- **Privacy Policy** — Explains what data is collected, how it is stored and your rights. Arctisoft collects no telemetry, analytics or behavioral tracking. Payment processing is handled by Stripe.
-- **Terms of Service** — Rules and conditions for using Arctisoft Studio products and services.
-- **License Agreement** — End-user license agreement covering software usage, modification restrictions and liability limitations.
+- **Privacy Policy** - Explains what data is collected, how it is stored and your rights. Arctisoft collects no telemetry, analytics or behavioral tracking. Payment processing is handled by Stripe.
+- **Terms of Service** - Rules and conditions for using Arctisoft Studio products and services.
+- **License Agreement** - End-user license agreement covering software usage, modification restrictions and liability limitations.
 
 ## **Getting Started Guide**
 
