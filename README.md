@@ -16,7 +16,7 @@
 
 - **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, account tier display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
 - **Application Library:** Install, launch, update and uninstall Medio, WaveShaper and MetaEdit+ from one interface with version tracking, disk usage monitoring and last launch timestamps.
-- **License Management:** Redeem and manage license keys with per-product activation tracking. Premium keys unlock features across the entire Arctisoft Studio suite.
+- **License Management:** Redeem and manage license keys with per-product filtering, status tracking and device monitoring. Each product uses an independent license key.
 - **Purchase History:** View all past transactions with product details, amounts and associated license keys. Generate printable PDF invoices directly from the Hub.
 - **Secure Authentication:** Sign in with email and password, Google SSO or GitHub SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
 - **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Create an account at any time to unlock all features.
@@ -63,7 +63,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
    - [Profile](#profile)
    - [Preferences](#preferences)
    - [Security](#security)
-   - [Data and Activity](#data-and-activity)
+   - [Data and Privacy](#data-and-privacy)
    - [About](#about)
 9. [Authentication](#authentication)
    - [Sign-In Methods](#sign-in-methods)
@@ -192,11 +192,13 @@ The redemption process includes format validation, duplicate detection and clear
 
 ### **Viewing Your Licenses**
 
-All redeemed licenses are displayed in a list showing:
-- **Product** - which application the license applies to (with color-coded indicator)
-- **License Key** - the full key string
-- **Activation Date** - when the license was redeemed
-- **Status** - current license state
+All redeemed licenses are displayed as cards showing:
+- **Product** - which application the license applies to (with color-coded accent and product icon)
+- **License Key** - masked key with copy-to-clipboard button
+- **Status** - Active, Flagged or Suspended indicator
+- **Devices** - number of unique devices the license has been used on
+- **Activations** - total activation count
+- **Risk Score** - displayed when suspicious activity is detected
 
 Each Arctisoft Studio product has its own independent license key. A Medio Premium key unlocks Medio features; a WaveShaper Premium key unlocks WaveShaper features. MetaEdit+ is completely free with no license required. All licenses are one-time lifetime purchases managed through the Hub.
 
@@ -251,18 +253,19 @@ Manage authentication and access:
 - **Two-Factor Authentication** - Enable or disable TOTP-based 2FA with QR code enrollment
 - **Sign Out All Sessions** - Revoke all active sessions across devices
 
-### **Data and Activity**
+### **Data and Privacy**
 
 View account activity and manage your data:
-- **Activity Log** - Timeline of account events including logins, license activations and profile changes
-- **Delete Account** - Permanently remove your account and all associated data with confirmation safeguard
+- **Activity Log** - Timeline of account events including logins, license activations, password changes, session revocations and 2FA enrollment
+- **Delete Account** - Permanently remove your account and all associated data with email confirmation safeguard
 
 ### **About**
 
 View product information and access legal documentation:
-- **Hub Version** - Current installed version and platform details
-- **Applications** - Overview of all Arctisoft Studio products with their licensing model and pricing
+- **Hub Version** - Current installed version, platform, runtime and build details
+- **Applications** - Overview of all Arctisoft Studio products with their framework, licensing model and pricing
 - **Legal** - Quick links to the Privacy Policy, Terms of Service and License Agreement
+- **Copyright** - Arctisoft Studio copyright notice
 
 ## **Authentication**
 
@@ -301,7 +304,7 @@ The Release Notes page aggregates version history from all Arctisoft Studio prod
 
 ## **Help and FAQ**
 
-The Help page provides answers to frequently asked questions organized into four categories: General, Applications, Licenses and Account. A search bar lets you filter questions by keyword. At the bottom of the page, a diagnostics section lets you copy system information to the clipboard for including in support requests.
+The Help page provides answers to frequently asked questions organized into four categories: General, Applications, Licenses and Account. A search bar lets you filter questions by keyword. At the top of the page, a Quick Tools section provides four utility actions: **Copy Diagnostics** (copies system info to clipboard for support requests), **Open Install Folder** (opens the Arctisoft-Studio installation directory), **Clear App Cache** (clears persisted dashboard, settings and library cache) and **Restart Hub** (performs a full application restart).
 
 ## **Legal**
 
