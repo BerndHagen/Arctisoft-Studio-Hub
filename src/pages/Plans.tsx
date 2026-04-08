@@ -25,16 +25,16 @@ const products: ProductPlan[] = [
     id: 'medio',
     name: 'Medio',
     tagline: 'Universal Downloader',
-    context: 'A lightweight tool covering 1,000+ platforms — great value for everyday downloading.',
+    context: 'A lightweight tool covering 1,000+ platforms - great value for everyday downloading.',
     icon: '/medio-icon.png',
     stripeUrl: 'https://buy.stripe.com/eVaeVv1qggfBgwMfZ1',
     price: '€7.99',
     features: [
-      { label: 'Platform Support', basic: 'YouTube, Reddit, TikTok & more', premium: '1,000+ Platforms' },
+      { label: 'Platform Support', basic: '1,000+ Platforms', premium: '1,000+ Platforms' },
       { label: 'Max Video Quality', basic: 'Up to 1440p', premium: 'Up to 4320p (8K)' },
       { label: 'Concurrent Downloads', basic: 'Queue of 3', premium: 'Queue of 20' },
       { label: 'Download Speed', basic: true, premium: true },
-      { label: 'Playlist & Mix Downloads', basic: true, premium: true },
+      { label: 'Playlist & Mix Downloads', basic: false, premium: true },
       { label: 'Hardware GPU Acceleration', basic: true, premium: true },
       { label: 'Cloud-Synced Settings', basic: true, premium: true },
       { label: 'Download History', basic: '60 Entries', premium: '300 Entries' },
@@ -50,7 +50,7 @@ const products: ProductPlan[] = [
     id: 'waveshaper',
     name: 'WaveShaper',
     tagline: 'Audio Processing Studio',
-    context: 'A full professional audio studio — multiband compression, mastering suite, and lossless export up to 192 kHz.',
+    context: 'A full professional audio studio - multiband compression, mastering suite, and lossless export up to 192 kHz.',
     icon: '/waveshaper-icon.png',
     stripeUrl: 'https://buy.stripe.com/00w4gB1kebF87L2bhz6Na04',
     price: '€14.99',
@@ -67,11 +67,7 @@ const products: ProductPlan[] = [
       { label: 'Multiband Compression', basic: false, premium: true },
       { label: 'Mastering Suite (EBU R128)', basic: false, premium: true },
       { label: 'Audio Normalization (Peak/LUFS)', basic: false, premium: true },
-      { label: 'Time Stretch & Pitch Shift', basic: false, premium: true },
-      { label: 'Modulation Effects', basic: false, premium: true },
-      { label: 'Creative FX Suite', basic: false, premium: true },
       { label: 'Export with Premium Effects', basic: false, premium: true },
-      { label: 'Cross-Device Profile Sync', basic: false, premium: true },
       { label: 'Cloud Preset Sync', basic: false, premium: true },
       { label: 'Permanent Cloud Profile', basic: false, premium: true },
     ],
@@ -141,7 +137,7 @@ export default function Plans() {
               <img src={pendingProduct.icon} alt="" className="plans-modal-icon" />
               <div>
                 <h3 className="plans-modal-title">{pendingProduct.name} Premium</h3>
-                <span className="plans-modal-price">{pendingProduct.price} — one-time lifetime license</span>
+                <span className="plans-modal-price">{pendingProduct.price} - one-time lifetime license</span>
               </div>
             </div>
             <div className="plans-modal-steps">
@@ -174,7 +170,7 @@ export default function Plans() {
       <div className="plans-hero">
         <div className="plans-hero-text">
           <h1>Plans &amp; Pricing</h1>
-          <p>One-time payments — no subscriptions, no recurring fees ever</p>
+          <p>One-time payments - no subscriptions, no recurring fees ever</p>
         </div>
         <div className="plans-hero-badge">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -251,7 +247,7 @@ export default function Plans() {
                         className="plans-buy-btn"
                         onClick={() => handleBuy(product)}
                       >
-                        Get Premium — {product.price}
+                        Get Premium - {product.price}
                       </button>
                     </td>
                   </tr>
@@ -264,7 +260,7 @@ export default function Plans() {
 
       {/* Footer note */}
       <p className="plans-note">
-      After purchase you'll receive a license key by email. Redeem it on the <strong>Licenses</strong> page of the Hub — or in the Settings page of the respective application.
+      After purchase you'll receive a license key by email. Redeem it on the <strong>Licenses</strong> page of the Hub - or in the Settings page of the respective application.
         Your license is tied to your Arctisoft account and works on any device you're signed in to.
       </p>
     </div>
