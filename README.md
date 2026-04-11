@@ -16,7 +16,7 @@
 
 - **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, rank title display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
 - **Application Library:** Install, launch, update and uninstall all managed applications from one interface with version tracking, disk usage monitoring and last launch timestamps.
-- **License Management:** Redeem and manage license keys with per-product filtering, status tracking and device monitoring. Each product uses an independent license key.
+- **License Management:** Activate and manage license keys with product status overview and key reveal. Each product uses an independent license key.
 - **Purchase History:** View all past transactions with product details, amounts and associated license keys. Generate printable PDF invoices directly from the Hub.
 - **Secure Authentication:** Sign in with email and password or Google SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
 - **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Create an account at any time to unlock all features.
@@ -188,7 +188,7 @@ To activate a premium license:
 3. Click **Activate** - the system validates the key format, checks availability and links it to your account
 4. On success, the license appears in your list and premium features are unlocked immediately
 
-The redemption process includes format validation, duplicate detection and clear error messaging if the key is invalid or already claimed.
+The activation process includes format validation, duplicate detection and clear error messaging if the key is invalid or already claimed.
 
 ### **Viewing Your Licenses**
 
@@ -324,7 +324,7 @@ The Legal page contains three tabs:
 ### **Step 2: Create an Account or Sign In**
 
 1. On the login screen, choose **Create Account** or sign in with an existing account
-2. You can sign in with email and password, Google or GitHub
+2. You can sign in with email and password or Google
 3. Verify your email if creating a new account
 4. Optionally enable two-factor authentication in Settings → Security
 
@@ -340,7 +340,7 @@ The Legal page contains three tabs:
 1. Purchase a Premium license from the **Plans** page or the Arctisoft Studio website
 2. Navigate to the **Licenses** page
 3. Enter your license key and click **Activate**
-4. Premium features are unlocked immediately across all Arctisoft Studio applications
+4. Premium features are unlocked immediately for that application
 
 ## **Copyright**
 
