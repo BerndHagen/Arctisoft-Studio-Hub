@@ -14,11 +14,11 @@
 
 ### **Key Features**
 
-- **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, account tier display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
+- **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, rank title display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
 - **Application Library:** Install, launch, update and uninstall all managed applications from one interface with version tracking, disk usage monitoring and last launch timestamps.
 - **License Management:** Redeem and manage license keys with per-product filtering, status tracking and device monitoring. Each product uses an independent license key.
 - **Purchase History:** View all past transactions with product details, amounts and associated license keys. Generate printable PDF invoices directly from the Hub.
-- **Secure Authentication:** Sign in with email and password, Google SSO or GitHub SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
+- **Secure Authentication:** Sign in with email and password or Google SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
 - **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Create an account at any time to unlock all features.
 - **Shared Session:** Sign in once and your session is shared across the Hub and all managed applications via an encrypted local session file.
 - **Account Settings:** Full control over your profile including avatar upload, email change, password update, preferences configuration and activity log.
@@ -137,7 +137,7 @@ The Dashboard is the first page you see after signing in. It provides a personal
 
 ### **Account Overview**
 
-The top section displays a greeting with your username, current account level and XP progress bar, account tier (Basic or Premium) and membership duration. Quick-launch cards for each installed application let you open them directly from the dashboard without navigating to the Library.
+The top section displays a greeting with your username, current account level and XP progress bar, rank title and membership duration. Quick-launch cards for each installed application let you open them directly from the dashboard without navigating to the Library.
 
 The level and XP system mirrors the progression used across all Arctisoft Studio applications. Experience is earned through usage and activities, with each level requiring progressively more XP to advance.
 
@@ -169,8 +169,11 @@ When a new version is available, the application card shows an **Update** button
 
 From each application card you can:
 - **Launch** the application directly
+- **Update** to the latest version when an update is available
+- **Repair** by re-downloading and reinstalling the current version
+- **Open Folder** to view the installation directory
+- **Change Install Path** to choose a custom installation directory
 - **Uninstall** to remove the application and free disk space
-- **View** detailed information including features and pricing
 
 ## **License Management**
 
@@ -181,8 +184,8 @@ The Licenses page handles all license key operations for your account.
 To activate a premium license:
 
 1. Navigate to the **Licenses** page
-2. Enter your license key in the redemption field
-3. Click **Redeem** - the system validates the key format, checks availability and links it to your account
+2. Enter your license key in the activation field
+3. Click **Activate** - the system validates the key format, checks availability and links it to your account
 4. On success, the license appears in your list and premium features are unlocked immediately
 
 The redemption process includes format validation, duplicate detection and clear error messaging if the key is invalid or already claimed.
@@ -190,12 +193,11 @@ The redemption process includes format validation, duplicate detection and clear
 ### **Viewing Your Licenses**
 
 All redeemed licenses are displayed as cards showing:
-- **Product** - which application the license applies to (with color-coded accent and product icon)
-- **License Key** - masked key with copy-to-clipboard button
-- **Status** - Active, Flagged or Suspended indicator
-- **Devices** - number of unique devices the license has been used on
-- **Activations** - total activation count
-- **Risk Score** - displayed when suspicious activity is detected
+- **Product** - which application the license applies to (with color-coded accent)
+- **Tagline** - the product description
+- **License Key** - masked key with click-to-reveal and copy-to-clipboard button
+- **Status** - Active indicator
+- **Date** - when the license was created
 
 Each Arctisoft Studio product has its own independent license key. A Premium key for one product unlocks premium features for that product only. Some products may be completely free with no license required. All paid licenses are one-time lifetime purchases managed through the Hub.
 
@@ -208,7 +210,7 @@ The Purchases page provides a complete record of all transactions linked to your
 Each purchase entry displays:
 - **Product** - which application the purchase applies to (with product icon and color coding)
 - **Amount** - the purchase price and currency
-- **License Key** - the associated key (masked by default, expandable to view full key)
+- **License Key** - the associated key (masked, with copy-to-clipboard button)
 - **Date** - when the purchase was completed
 
 A summary at the top shows the total number of purchases and total amount spent across all products.
@@ -248,13 +250,15 @@ Configure Hub behavior:
 Manage authentication and access:
 - **Change Password** - Update your account password with confirmation
 - **Two-Factor Authentication** - Enable or disable TOTP-based 2FA with QR code enrollment
+- **Devices** - View and manage registered devices with deauthorization
 - **Sign Out All Sessions** - Revoke all active sessions across devices
 
 ### **Data and Privacy**
 
 View account activity and manage your data:
 - **Activity Log** - Timeline of account events including logins, license activations, password changes, session revocations and 2FA enrollment
-- **Delete Account** - Permanently remove your account and all associated data with email confirmation safeguard
+- **Export Data** - Download a JSON export of your account information, licenses, purchases and activity history
+- **Delete Account** - Permanently remove your account and all associated data with email and password confirmation safeguard
 
 ### **About**
 
@@ -268,12 +272,11 @@ View product information and access legal documentation:
 
 ### **Sign-In Methods**
 
-The Hub supports three authentication methods:
+The Hub supports two authentication methods:
 - **Email and Password** - Traditional sign-in with email verification for new accounts
 - **Google SSO** - One-click sign-in with your Google account
-- **GitHub SSO** - One-click sign-in with your GitHub account
 
-SSO providers open in a separate popup window so the main Hub interface is never navigated away. New users can create an account directly from the sign-in page. A password reset flow is available for forgotten credentials.
+SSO opens in a separate popup window so the main Hub interface is never navigated away. New users can create an account directly from the sign-in page. A password reset flow is available for forgotten credentials.
 
 ### **Guest Mode**
 
@@ -336,7 +339,7 @@ The Legal page contains three tabs:
 
 1. Purchase a Premium license from the **Plans** page or the Arctisoft Studio website
 2. Navigate to the **Licenses** page
-3. Enter your license key and click **Redeem**
+3. Enter your license key and click **Activate**
 4. Premium features are unlocked immediately across all Arctisoft Studio applications
 
 ## **Copyright**
