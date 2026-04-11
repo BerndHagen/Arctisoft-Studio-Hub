@@ -87,7 +87,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Operating System:** Windows 10 (64-bit)
 - **Processor:** Dual-core 1.6 GHz or equivalent
 - **RAM:** 4 GB
-- **Storage:** 200 MB of free disk space plus additional space for managed applications
+- **Storage:** 600 MB of free disk space plus additional space for managed applications
 - **Display:** 1280 x 720 resolution
 - **Internet:** Required for authentication, license management and application updates
 
@@ -95,7 +95,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Operating System:** Windows 10/11 (64-bit)
 - **Processor:** Quad-core 2.0 GHz or higher
 - **RAM:** 8 GB or higher
-- **Storage:** 500 MB of free disk space on SSD plus additional space for managed applications
+- **Storage:** 2 GB of free disk space on SSD plus additional space for managed applications
 - **Display:** 1920 x 1080 resolution
 - **Internet:** Broadband connection for fast application downloads and updates
 
@@ -343,7 +343,7 @@ The Legal page contains three tabs:
 
 This software is the intellectual property of the Author and is protected by international copyright laws.
 
-1. **License:** You are granted a non-exclusive, non-transferable license to use the software for personal purposes.
+1. **License:** You are granted a non-exclusive, non-transferable license to use the software for personal and commercial purposes.
 
 2. **Modifications Prohibited:** Modification, decompiling, reverse-engineering or derivative work is prohibited without prior written consent.
 
