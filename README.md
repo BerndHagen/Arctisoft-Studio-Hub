@@ -10,17 +10,17 @@
   <a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/Arctisoft-Studio-Hub?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Electron-41-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron">&nbsp;&nbsp;<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
 </p>
 
-**Arctisoft Studio Hub** is a centralized desktop application for managing your **Arctisoft Studio** account, product licenses and all companion applications from a single interface. It provides a unified dashboard where you can install, launch and update **Medio**, **WaveShaper** and **MetaEdit+** with built-in license redemption, purchase history with invoice generation, two-factor authentication, SSO sign-in, guest browsing and a live release notes feed. The Hub is built with Electron and React, connecting to a secure cloud backend for authentication, license validation and account management while using the GitHub Releases API to deliver application updates. A shared encrypted session file allows all Arctisoft Studio applications to share a single sign-in.
+**Arctisoft Studio Hub** is a centralized desktop application for managing your **Arctisoft Studio** account, product licenses and all companion applications from a single interface. It provides a unified dashboard where you can install, launch and update all managed applications with built-in license redemption, purchase history with invoice generation, two-factor authentication, SSO sign-in, guest browsing and a live release notes feed. The Hub connects to a secure cloud backend for authentication, license validation and account management while using the GitHub Releases API to deliver application updates. A shared encrypted session file allows all Arctisoft Studio applications to share a single sign-in.
 
 ### **Key Features**
 
 - **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, account tier display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
-- **Application Library:** Install, launch, update and uninstall Medio, WaveShaper and MetaEdit+ from one interface with version tracking, disk usage monitoring and last launch timestamps.
+- **Application Library:** Install, launch, update and uninstall all managed applications from one interface with version tracking, disk usage monitoring and last launch timestamps.
 - **License Management:** Redeem and manage license keys with per-product filtering, status tracking and device monitoring. Each product uses an independent license key.
 - **Purchase History:** View all past transactions with product details, amounts and associated license keys. Generate printable PDF invoices directly from the Hub.
 - **Secure Authentication:** Sign in with email and password, Google SSO or GitHub SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
 - **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Create an account at any time to unlock all features.
-- **Shared Session:** Sign in once and your session is shared across the Hub, Medio and WaveShaper via an encrypted local session file.
+- **Shared Session:** Sign in once and your session is shared across the Hub and all managed applications via an encrypted local session file.
 - **Account Settings:** Full control over your profile including avatar upload, email change, password update, preferences configuration and activity log.
 - **Plans and Pricing:** Side-by-side feature comparison tables for all products with Basic and Premium tiers.
 - **Release Notes:** Aggregated version history from all product repositories with product filtering and color-coded entries.
@@ -88,7 +88,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Processor:** Dual-core 1.6 GHz or equivalent
 - **RAM:** 4 GB
 - **Storage:** 200 MB of free disk space plus additional space for managed applications
-- **Display:** 1280 �- 720 resolution
+- **Display:** 1280 x 720 resolution
 - **Internet:** Required for authentication, license management and application updates
 
 ### **Recommended Requirements**
@@ -96,7 +96,7 @@ Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%
 - **Processor:** Quad-core 2.0 GHz or higher
 - **RAM:** 8 GB or higher
 - **Storage:** 500 MB of free disk space on SSD plus additional space for managed applications
-- **Display:** 1920 �- 1080 resolution
+- **Display:** 1920 x 1080 resolution
 - **Internet:** Broadband connection for fast application downloads and updates
 
 ## **Third-Party Libraries**
@@ -143,7 +143,7 @@ The level and XP system mirrors the progression used across all Arctisoft Studio
 
 ### **News Feed**
 
-The lower section aggregates the latest release notes from all product repositories (Medio, WaveShaper, MetaEdit+). Each entry shows the product name, version number, release date and a summary of changes. Clicking an entry opens the full release notes in a detail view. This keeps you informed about new features, bug fixes and updates across the entire suite without leaving the Hub.
+The lower section aggregates the latest release notes from all product repositories. Each entry shows the product name, version number, release date and a summary of changes. Clicking an entry opens the full release notes in a detail view. This keeps you informed about new features, bug fixes and updates across the entire suite without leaving the Hub.
 
 ## **Application Library**
 
@@ -154,15 +154,12 @@ The Library page is the central place to manage all Arctisoft Studio application
 To install an application for the first time:
 
 1. Navigate to the **Library** page
-2. Find the application card (Medio, WaveShaper or MetaEdit+)
+2. Find the application card for the product you want to install
 3. Click the **Install** button
 4. The Hub downloads the latest release from GitHub and runs the installer
 5. Once complete, the card updates to show the installed version and a **Launch** button
 
-All applications are installed to `%LOCALAPPDATA%\Arctisoft-Studio\` with dedicated subdirectories:
-- `Medio - Universal Downloader`
-- `WaveShaper - Audio Processing Studio`
-- `MetaEdit Plus - Smart Tag Editor`
+All applications are installed to `%LOCALAPPDATA%\Arctisoft-Studio\` with dedicated subdirectories for each product.
 
 ### **Updating Applications**
 
@@ -200,7 +197,7 @@ All redeemed licenses are displayed as cards showing:
 - **Activations** - total activation count
 - **Risk Score** - displayed when suspicious activity is detected
 
-Each Arctisoft Studio product has its own independent license key. A Medio Premium key unlocks Medio features; a WaveShaper Premium key unlocks WaveShaper features. MetaEdit+ is completely free with no license required. All licenses are one-time lifetime purchases managed through the Hub.
+Each Arctisoft Studio product has its own independent license key. A Premium key for one product unlocks premium features for that product only. Some products may be completely free with no license required. All paid licenses are one-time lifetime purchases managed through the Hub.
 
 ## **Purchases**
 
@@ -222,7 +219,7 @@ From each purchase entry you can generate a printable PDF invoice. Invoices incl
 
 ## **Plans and Pricing**
 
-The Plans page provides a detailed side-by-side comparison of Basic (Free) and Premium features for each product. Feature tables are organized by product (Medio, WaveShaper, MetaEdit+) with checkmarks and crosses indicating availability per tier.
+The Plans page provides a detailed side-by-side comparison of Basic (Free) and Premium features for each product. Feature tables are organized by product with checkmarks and crosses indicating availability per tier.
 
 This page helps you understand exactly what each license tier includes before purchasing. It links directly to the purchase flow for seamless upgrades.
 
@@ -296,11 +293,11 @@ To disable 2FA, enter a valid verification code in the disable confirmation dial
 
 ### **Shared Session**
 
-The Hub shares a single authentication session with all managed applications. When you sign in through the Hub, your session tokens are encrypted using AES-256-CBC and stored in a shared session file at `%LOCALAPPDATA%\Arctisoft-Studio\session.dat`. Medio, WaveShaper and the Hub all read from this file, so signing in once grants access across the entire suite. Signing out from any application clears the shared session.
+The Hub shares a single authentication session with all managed applications. When you sign in through the Hub, your session tokens are encrypted and stored in a shared session file at `%LOCALAPPDATA%\Arctisoft-Studio\`. All managed applications read from this file, so signing in once grants access across the entire suite. Signing out from any application clears the shared session.
 
 ## **Release Notes**
 
-The Release Notes page aggregates version history from all Arctisoft Studio product repositories. Releases are fetched from the GitHub API and cached to minimize API calls, then displayed in reverse chronological order with product-specific color coding. You can filter by product (Medio, WaveShaper, MetaEdit+, Hub) to focus on a single application. Each entry shows the version tag, release date and a formatted changelog with headings and bullet points.
+The Release Notes page aggregates version history from all Arctisoft Studio product repositories. Releases are fetched from the GitHub API and cached to minimize API calls, then displayed in reverse chronological order with product-specific color coding. You can filter by product to focus on a single application. Each entry shows the version tag, release date and a formatted changelog with headings and bullet points.
 
 ## **Help and FAQ**
 

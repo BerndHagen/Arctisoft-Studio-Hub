@@ -1,0 +1,171 @@
+ARCTISOFT STUDIO HUB LICENSE AGREEMENT
+======================================
+Copyright (c) 2025-2026 Bernd Julian Hagen. All rights reserved.
+
+This document outlines the terms under which Arctisoft Studio Hub
+("Software") is provided to you. By using the Software, you agree to these terms.
+
+================================================================================
+1. LICENSE GRANT
+================================================================================
+
+You are granted a limited, non-exclusive, non-transferable license to:
+
+  - Download and install the Software on your personal devices
+  - Use the Software for personal, non-commercial purposes
+  - Share the Software with others for promotional purposes
+
+This license does not permit modification, reverse engineering, or commercial
+distribution of the Software.
+
+================================================================================
+2. MANAGED APPLICATIONS
+================================================================================
+
+Arctisoft Studio Hub manages the installation, updates and licensing of
+companion applications within the Arctisoft Studio ecosystem. Each managed
+application is governed by its own separate license agreement.
+
+  - License keys purchased through the Hub are subject to the terms of
+    the respective application's license agreement
+  - The Hub acts as a management interface and does not grant additional
+    rights beyond those provided by each application's license
+
+================================================================================
+3. THIRD-PARTY COMPONENTS
+================================================================================
+
+Arctisoft Studio Hub incorporates the following open-source technologies:
+
+Electron - Licensed under MIT
+A cross-platform desktop application framework combining Chromium and Node.js.
+Website: https://www.electronjs.org
+
+React - Licensed under MIT
+A JavaScript library for building user interfaces.
+Website: https://react.dev
+
+React Router - Licensed under MIT
+Declarative routing for React applications.
+Website: https://reactrouter.com
+
+Vite - Licensed under MIT
+A modern frontend build tool and development server.
+Website: https://vite.dev
+
+TypeScript - Licensed under Apache 2.0
+A typed superset of JavaScript that compiles to plain JavaScript.
+Website: https://www.typescriptlang.org
+
+Electron Builder - Licensed under MIT
+A complete solution to package and build Electron applications.
+Website: https://www.electron.build
+
+Users should review and comply with the licensing terms of these components.
+
+================================================================================
+4. DATA HANDLING
+================================================================================
+
+Arctisoft Studio Hub uses a shared account system across all managed
+applications. Only minimal data is stored on the server, while all
+preferences and application data remain local on your device.
+
+WHAT THE HUB STORES ON THE SERVER:
+
+  - Account: Email, username, avatar and authentication credentials
+  - Progress: Experience points and level
+  - Licenses: License keys, activation status and device identifiers
+  - Purchases: Transaction records and payment references
+
+WHAT THE HUB STORES LOCALLY:
+
+  - Session: Encrypted authentication tokens shared across applications
+  - Settings: Application preferences and configuration
+  - Cache: Release information, dashboard data and library state
+
+WHAT THE HUB DOES NOT STORE:
+
+  - Payment information (handled securely by Stripe)
+  - Telemetry, analytics or behavioral tracking data
+  - File system activity outside of managed application directories
+  - Content processed by managed applications
+
+PRIVACY CONTROLS:
+
+You have control over your data:
+
+  - Clear application cache via Help page tools
+  - Sign out from all sessions via Settings
+  - Delete your account and all associated data via Settings
+
+DATA RETENTION:
+
+  - Basic accounts: Automatically deleted after 365 days of inactivity
+  - Premium accounts: Retained while any license is active
+
+================================================================================
+5. PAYMENT AND REFUNDS
+================================================================================
+
+Payments are processed securely through Stripe. The Author does not store any
+payment information.
+
+  - License keys are delivered via email within 5-10 minutes of purchase
+  - License keys are non-refundable once delivered
+  - For payment issues, contact Stripe support
+  - For license delivery issues, contact the Author
+
+================================================================================
+6. YOUR RESPONSIBILITIES
+================================================================================
+
+When using the Hub, you are responsible for:
+
+  - Maintaining the security of your account credentials
+  - Complying with the license terms of each managed application
+  - Using the Software in accordance with applicable laws
+  - Not sharing or distributing your license keys
+
+The Author is not responsible for:
+
+  - Unauthorized access resulting from shared credentials
+  - Content created or processed by managed applications
+  - Third-party service interruptions (GitHub, Stripe)
+
+================================================================================
+7. DISCLAIMER OF WARRANTIES
+================================================================================
+
+The Software is provided "AS IS" without warranty of any kind. The Author makes
+no guarantees regarding:
+
+  - Continuous availability of update services
+  - Compatibility with future operating system versions
+  - Freedom from errors or interruptions
+  - Fitness for any particular purpose
+
+================================================================================
+8. LIMITATION OF LIABILITY
+================================================================================
+
+To the maximum extent permitted by law, the Author shall not be liable for any
+damages arising from your use of the Software, including but not limited to:
+
+  - Loss of data or application configurations
+  - Service interruptions or update failures
+  - Claims by third parties related to managed applications
+  - Technical issues or compatibility problems
+
+================================================================================
+9. LICENSE TERMINATION
+================================================================================
+
+The Author may terminate your license if you:
+
+  - Violate any terms of this agreement
+  - Share or distribute your license keys
+  - Use the Software for illegal purposes
+  - Attempt to reverse engineer or modify the Software
+
+Upon termination, you must stop using the Software and delete all copies.
