@@ -366,25 +366,37 @@ By using Arctisoft Studio Hub, you agree to these terms and conditions.
 
 Preview the Arctisoft Studio Hub interface before downloading. Note that future updates may introduce additional functionality.
 
-> Screenshots will be added once the application interface is finalized.
-
-<!--
 <table>
   <tr>
+    <th>Arctisoft Studio Hub - Login</th>
     <th>Arctisoft Studio Hub - Dashboard</th>
-    <th>Arctisoft Studio Hub - Library</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-dashboard.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-dashboard.png" alt="Hub Dashboard" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-library.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-library.png" alt="Hub Library" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-login.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-login.png" alt="Hub Login" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-dashboard.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-dashboard.png" alt="Hub Dashboard" width="450"></a></td>
   </tr>
   <tr>
     <th>Arctisoft Studio Hub - Licenses</th>
+    <th>Arctisoft Studio Hub - Purchases</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-licenses.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-licenses.png" alt="Hub Licenses" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-purchases.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-purchases.png" alt="Hub Purchases" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>Arctisoft Studio Hub - Plans</th>
     <th>Arctisoft Studio Hub - Settings</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-licenses.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-licenses.png" alt="Hub Licenses" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-settings.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/img-hub-settings.png" alt="Hub Settings" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-plans.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-plans.png" alt="Hub Plans" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-settings.png" alt="Hub Settings" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>Arctisoft Studio Hub - Releases</th>
+    <th>Arctisoft Studio Hub - Help</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-releases.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-releases.png" alt="Hub Releases" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-help.png"><img src="https://github.com/BerndHagen/Arctisoft-Studio-Hub/raw/main/images/screenshot-help.png" alt="Hub Help" width="450"></a></td>
   </tr>
 </table>
--->
