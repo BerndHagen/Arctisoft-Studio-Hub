@@ -10,7 +10,7 @@
   <a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/Arctisoft-Studio-Hub?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/Arctisoft-Studio-Hub/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Electron-41-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron">&nbsp;&nbsp;<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
 </p>
 
-**Arctisoft Studio Hub** is a centralized desktop application for managing your **Arctisoft Studio** account, product licenses and all companion applications from a single interface. It provides a unified dashboard where you can install, launch and update all managed applications with built-in license redemption, purchase history with invoice generation, two-factor authentication, SSO sign-in, guest browsing and a live release notes feed. The Hub connects to a secure cloud backend for authentication, license validation and account management while using the GitHub Releases API to deliver application updates. A shared encrypted session file allows all Arctisoft Studio applications to share a single sign-in.
+**Arctisoft Studio Hub** is a centralized desktop application for managing your **Arctisoft Studio** account, product licenses and all companion applications from a single interface. It provides a unified dashboard where you can install, launch and update all managed applications with built-in license redemption, purchase history with invoice generation, two-factor authentication, SSO sign-in, guest browsing and a live release notes feed. The Hub connects to a secure cloud backend for authentication, license validation, account management and application updates. A shared encrypted session file allows all Arctisoft Studio applications to share a single sign-in.
 
 ### **Key Features**
 
@@ -105,7 +105,7 @@ Arctisoft Studio Hub is built on the following open-source technologies.
 
 ### Electron
 
-**Electron** provides the cross-platform desktop application framework, combining Chromium and Node.js to deliver a native Windows experience. It handles window management, system tray integration, IPC communication, file system operations and the auto-update mechanism.
+**Electron** provides the cross-platform desktop application framework, combining Chromium and Node.js to deliver a native Windows experience. It handles window management, system tray integration, file system operations and the auto-update mechanism.
 
 - **Version:** 41.x
 - **Website:** [Electron Official Website](https://www.electronjs.org/)
@@ -163,7 +163,7 @@ All applications are installed to `%LOCALAPPDATA%\Arctisoft-Studio\` with dedica
 
 ### **Updating Applications**
 
-When a new version is available, the application card shows an **Update** button with the latest version number. Clicking it downloads the update and applies it automatically. The Hub checks for updates on launch and caches release information to avoid excessive API calls.
+When a new version is available, the application card shows an **Update** button with the latest version number. Clicking it downloads the update and applies it automatically. The Hub checks for updates on launch and notifies you when new versions are available.
 
 ### **Managing Applications**
 
@@ -296,11 +296,11 @@ To disable 2FA, enter a valid verification code in the disable confirmation dial
 
 ### **Shared Session**
 
-The Hub shares a single authentication session with all managed applications. When you sign in through the Hub, your session tokens are encrypted and stored in a shared session file at `%LOCALAPPDATA%\Arctisoft-Studio\`. All managed applications read from this file, so signing in once grants access across the entire suite. Signing out from any application clears the shared session.
+The Hub shares a single authentication session with all managed applications. When you sign in through the Hub, your session is securely encrypted and stored locally. All managed applications share this session, so signing in once grants access across the entire suite. Signing out from any application clears the shared session.
 
 ## **Release Notes**
 
-The Release Notes page aggregates version history from all Arctisoft Studio product repositories. Releases are fetched from the GitHub API and cached to minimize API calls, then displayed in reverse chronological order with product-specific color coding. You can filter by product to focus on a single application. Each entry shows the version tag, release date and a formatted changelog with headings and bullet points.
+The Release Notes page aggregates version history from all Arctisoft Studio products displayed in reverse chronological order with product-specific color coding. You can filter by product to focus on a single application. Each entry shows the version tag, release date and a formatted changelog with headings and bullet points.
 
 ## **Help and FAQ**
 
