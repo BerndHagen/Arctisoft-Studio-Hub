@@ -1,0 +1,57 @@
+﻿# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+dist-electron/
+out/
+build/
+release/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.code-workspace
+
+# Electron builder cache
+.electron-gyp/
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
