@@ -29,11 +29,12 @@
 
 ### **Managed Applications**
 
-Three applications are managed through the Hub, all installed to `%LOCALAPPDATA%\Arctisoft-Studio\`:
+Four applications are managed through the Hub, all installed to `%LOCALAPPDATA%\Arctisoft-Studio\`:
 
 - **Medio** - Universal Downloader. Download video and audio from 1,000+ platforms with hardware-accelerated encoding up to 8K resolution. (€7.99 · Freemium)
 - **WaveShaper** - Audio Processing Studio. Professional audio processing with 10-band parametric EQ, multi-effects chain, dynamic compression and a complete mastering suite. (€14.99 · Freemium)
 - **MetaEdit+** - Smart Tag Editor. Batch audio metadata editor supporting 13 formats and 18 tag fields with auto-tag engine and cover art lookup. (100% Free)
+- **Sonaris** - Audio Quality Analyzer. Advanced audio analysis with objective quality metrics, spectrum diagnostics and mastering-focused inspection workflows. (100% Free)
 
 ## **Table of Contents**
 
