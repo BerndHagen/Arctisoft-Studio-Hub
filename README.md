@@ -15,11 +15,11 @@
 ### **Key Features**
 
 - **Centralized Dashboard:** Personalized account overview with greeting, level and XP progress, rank title display, quick-launch cards for all installed applications and a live news feed aggregating release notes from all product repositories.
-- **Application Library:** Install, launch, update and uninstall all managed applications from one interface with version tracking, disk usage monitoring and last launch timestamps.
+- **Application Library:** Install, launch, update and uninstall all managed applications from one interface with version tracking, disk usage monitoring, last launch timestamps, per-app install paths and checksum verification when release checksums are published.
 - **License Management:** Activate and manage license keys with product status overview and key reveal. Each product uses an independent license key.
 - **Purchase History:** View all past transactions with product details, amounts and associated license keys. Generate printable PDF invoices directly from the Hub.
-- **Secure Authentication:** Sign in with email and password or Google SSO. Supports two-factor authentication (TOTP) with QR code enrollment and recovery.
-- **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Create an account at any time to unlock all features.
+- **Secure Authentication:** Sign in with email and password or Google SSO. Supports two-factor authentication (TOTP) with QR code enrollment.
+- **Guest Mode:** Browse the Library, Plans, Release Notes, Help and Legal pages without signing in. Library install, update and launch actions are available in guest mode; account pages such as Dashboard, Licenses, Purchases and Settings require sign-in.
 - **Shared Session:** Sign in once and your session is shared across the Hub and all managed applications via an encrypted local session file.
 - **Account Settings:** Full control over your profile including avatar upload, email change, password update, preferences configuration and activity log.
 - **Plans and Pricing:** Side-by-side feature comparison tables for all products with Basic and Premium tiers.
@@ -29,7 +29,7 @@
 
 ### **Managed Applications**
 
-Four applications are managed through the Hub, all installed to `%LOCALAPPDATA%\Arctisoft-Studio\`:
+Four applications are managed through the Hub. By default they install below `%LOCALAPPDATA%\Arctisoft-Studio\`, and each application can also use a custom install path configured from its Library card:
 
 - **Medio** - Universal Downloader. Download video and audio from 1,000+ platforms with hardware-accelerated encoding up to 8K resolution. (€7.99 · Freemium)
 - **WaveShaper** - Audio Processing Studio. Professional audio processing with 10-band parametric EQ, multi-effects chain, dynamic compression and a complete mastering suite. (€14.99 · Freemium)
@@ -157,14 +157,14 @@ To install an application for the first time:
 1. Navigate to the **Library** page
 2. Find the application card for the product you want to install
 3. Click the **Install** button
-4. The Hub downloads the latest release from GitHub and runs the installer
+4. The Hub downloads the latest release from GitHub, verifies SHA-256 when checksum assets are available, and runs the installer or patch package
 5. Once complete, the card updates to show the installed version and a **Launch** button
 
-All applications are installed to `%LOCALAPPDATA%\Arctisoft-Studio\` with dedicated subdirectories for each product.
+By default, applications are installed to `%LOCALAPPDATA%\Arctisoft-Studio\` with dedicated subdirectories for each product. You can choose a custom install location per application from the Library card.
 
 ### **Updating Applications**
 
-When a new version is available, the application card shows an **Update** button with the latest version number. Clicking it downloads the update and applies it automatically. The Hub checks for updates on launch and notifies you when new versions are available.
+When a new version is available, the application card shows an **Update** button with the latest version number. Clicking it downloads the update, verifies checksums when provided by the release, and applies it automatically. The Hub checks for updates on launch and notifies you when new versions are available.
 
 ### **Managing Applications**
 
@@ -281,7 +281,7 @@ SSO opens in a separate popup window so the main Hub interface is never navigate
 
 ### **Guest Mode**
 
-The Hub supports a Guest Mode for users who want to browse before creating an account. Guests can access the Application Library, Plans, Release Notes, Help and Legal pages. Features that require an account (Dashboard, Licenses, Purchases, Settings) redirect guests to the Library. Guest mode can be exited at any time by signing in.
+The Hub supports a Guest Mode for users who want to browse before creating an account. Guests can access the Application Library, Plans, Release Notes, Help and Legal pages, and can install, update and launch managed applications from the Library. Features that require an account (Dashboard, Licenses, Purchases, Settings, premium license access and cloud-backed account data) redirect guests to the Library. Guest mode can be exited at any time by signing in.
 
 ### **Two-Factor Authentication**
 
